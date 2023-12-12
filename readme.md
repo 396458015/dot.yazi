@@ -4,6 +4,7 @@
 3. scoop install yazi  
 - 配置文件路径  
 'C:\Users\ThinkPad\AppData\Roaming\yazi\config'  
+- 自动代码预览，无需安装bat;wezterm自动图片预览  
 
 ## 快捷键
 - a XX    创建XX文件  
