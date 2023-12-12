@@ -13,7 +13,7 @@
 
 ## 快捷键
 - a XX    创建XX文件  
-- a XX /  创建XX文件夹  
+- a XX/   创建XX文件夹  
 
 - y    copy  
 - d    cut  
