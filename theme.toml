@@ -3,14 +3,14 @@
 # : Manager {{{
 
 [manager]
-cwd = { fg = "cyan" }
+cwd = { fg = "#8ae234" }
 
 # Hovered
-hovered         = { fg = "black", bg = "lightblue" }
+hovered         = { fg = "#ab7ca5", bg = "#450e34" }
 preview_hovered = { underline = true }
 
 # Find
-find_keyword  = { fg = "yellow", italic = true }
+find_keyword  = { fg = "#cc0000", bold = true }
 find_position = { fg = "magenta", bg = "reset", italic = true }
 
 # Marker
@@ -19,13 +19,13 @@ marker_copied   = { fg = "lightyellow", bg = "lightyellow" }
 marker_cut      = { fg = "lightred",    bg = "lightred" }
 
 # Tab
-tab_active   = { fg = "black", bg = "lightblue" }
-tab_inactive = { fg = "white", bg = "darkgray" }
+tab_active   = { fg = "#2e3436", bg = "#450e34" }
+tab_inactive = { fg = "#abb2bf", bg = "darkgray" }
 tab_width    = 1
 
 # Border
 border_symbol = "│"
-border_style  = { fg = "gray" }
+border_style  = { fg = "#626880" }
 
 # Offset
 folder_offset  = [ 1, 0, 1, 0 ]
@@ -40,19 +40,19 @@ syntect_theme = ""
 # : Status {{{
 
 [status]
-separator_open  = ""
-separator_close = ""
+separator_open  = ""
+separator_close = ""
 separator_style = { fg = "darkgray", bg = "darkgray" }
 
 # Mode
-mode_normal = { fg = "black", bg = "lightblue", bold = true }
-mode_select = { fg = "black", bg = "lightgreen", bold = true }
-mode_unset  = { fg = "black", bg = "lightmagenta", bold = true }
+mode_normal = { fg = "#2e3436", bg = "#89a0c3", bold = true }
+mode_select = { fg = "#2e3436", bg = "lightgreen", bold = true }
+mode_unset  = { fg = "#2e3436", bg = "lightmagenta", bold = true }
 
 # Progress
 progress_label  = { bold = true }
-progress_normal = { fg = "blue", bg = "black" }
-progress_error  = { fg = "red", bg = "black" }
+progress_normal = { fg = "#89a0c3", bg = "#2e3436" }
+progress_error  = { fg = "red", bg = "#2e3436" }
 
 # Permissions
 permissions_t = { fg = "lightgreen" }
@@ -77,7 +77,7 @@ inactive = {}
 # : Input {{{
 
 [input]
-border   = { fg = "blue" }
+border   = { fg = "#ab7ca5" }
 title    = {}
 value    = {}
 selected = { reversed = true }
@@ -113,10 +113,10 @@ hovered = { underline = true }
 # : Which {{{
 
 [which]
-mask            = { bg = "black" }
-cand            = { fg = "lightcyan" }
+mask            = { bg = "#300a24" }
+cand            = { fg = "#c4a000" }
 rest            = { fg = "darkgray" }
-desc            = { fg = "magenta" }
+desc            = { fg = "#ad7fa8" }
 separator       = "  "
 separator_style = { fg = "darkgray" }
 
@@ -130,7 +130,7 @@ on      = { fg = "magenta" }
 exec    = { fg = "cyan" }
 desc    = { fg = "gray" }
 hovered = { bg = "darkgray", bold = true }
-footer  = { fg = "black", bg = "white" }
+footer  = { fg = "#2e3436", bg = "#abb2bf" }
 
 # : }}}
 
@@ -164,8 +164,8 @@ rules = [
 	{ mime = "application/vnd.*", fg = "green" },
 
 	# Fallback
-	# { name = "*", fg = "white" },
-	{ name = "*/", fg = "blue" }
+	{ name = "*", fg = "#abb2bf" },
+	{ name = "*/", fg = "#876fab" }
 ]
 
 [icons]
