@@ -152,7 +152,7 @@ keymap = [
 	{ on = [ "g", "9" ], exec = "cd 'C:/Users/ThinkPad/.config/winfetch'", desc = "winfetch config" },
 	{ on = [ "g", "8" ], exec = "cd 'C:/Users/ThinkPad/AppData/Roaming/.goneovim'", desc = "goneovim config" },
 
-	{ on = [ "g", "1" ], exec = "cd 'F:/Research/Composites/CF-PEEK 热老化/paper'", desc = "WindowsTerminal config" },
+	{ on = [ "g", "1" ], exec = "cd 'F:/Research/Composites/CF-PEEK 热老化/paper'", desc = "thermal aging paper" },
 
 	# Help
 	{ on = [ "~" ], exec = "help", desc = "Open help" },
