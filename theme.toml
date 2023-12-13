@@ -3,15 +3,15 @@
 # : Manager {{{
 
 [manager]
-cwd = { fg = "#8ae234" }
+cwd = { fg = "#8ae234" } #edit
 
 # Hovered
-hovered         = { fg = "#ab7ca5", bg = "#450e34" }
+hovered         = { fg = "#2e3436", bg = "#9f86c4" } #edit
 preview_hovered = { underline = true }
 
 # Find
-find_keyword  = { fg = "#cc0000", bold = true }
-find_position = { fg = "magenta", bg = "reset", italic = true }
+find_keyword  = { fg = "#cc0000", bg = "reset", bold = true } #edit
+find_position = { fg = "#ae6485", bg = "reset", italic = true } #edit
 
 # Marker
 marker_selected = { fg = "lightgreen",  bg = "lightgreen" }
@@ -19,7 +19,7 @@ marker_copied   = { fg = "lightyellow", bg = "lightyellow" }
 marker_cut      = { fg = "lightred",    bg = "lightred" }
 
 # Tab
-tab_active   = { fg = "#2e3436", bg = "#450e34" }
+tab_active   = { fg = "#2e3436", bg = "#ae6485" } #edit
 tab_inactive = { fg = "#abb2bf", bg = "darkgray" }
 tab_width    = 1
 
@@ -67,7 +67,7 @@ permissions_s = { fg = "darkgray" }
 # : Select {{{
 
 [select]
-border   = { fg = "blue" }
+border   = { fg = "#ae6485" } #edit
 active   = { fg = "magenta" }
 inactive = {}
 
@@ -77,7 +77,7 @@ inactive = {}
 # : Input {{{
 
 [input]
-border   = { fg = "#ab7ca5" }
+border   = { fg = "#ae6485" } #edit
 title    = {}
 value    = {}
 selected = { reversed = true }
@@ -88,7 +88,7 @@ selected = { reversed = true }
 # : Completion {{{
 
 [completion]
-border   = { fg = "blue" }
+border   = { fg = "#ae6485" } #edit
 active   = { bg = "darkgray" }
 inactive = {}
 
@@ -103,7 +103,7 @@ icon_command = ""
 # : Tasks {{{
 
 [tasks]
-border  = { fg = "blue" }
+border  = { fg = "#ae6485" } #edit
 title   = {}
 hovered = { underline = true }
 
@@ -113,11 +113,11 @@ hovered = { underline = true }
 # : Which {{{
 
 [which]
-mask            = { bg = "#300a24" }
-cand            = { fg = "#c4a000" }
+mask            = { bg = "#1e1e2e" } #edit
+cand            = { fg = "#9cdcfe" } #edit
 rest            = { fg = "darkgray" }
-desc            = { fg = "#ad7fa8" }
-separator       = "  "
+desc            = { fg = "#ae6485" } #edit
+separator       = "  " #edit
 separator_style = { fg = "darkgray" }
 
 # : }}}
@@ -165,7 +165,7 @@ rules = [
 
 	# Fallback
 	{ name = "*", fg = "#abb2bf" },
-	{ name = "*/", fg = "#876fab" }
+	{ name = "*/", fg = "#9f86c4" } #edit
 ]
 
 [icons]
