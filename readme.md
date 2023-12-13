@@ -11,7 +11,7 @@
         scoop install fd  
      11.7 search file content  
         scoop install ripgrep  
-     11.8 search file  
+     11.8 fuzzy search file  
         scoop install fzf  
      - 配置文件路径  
      'C:\Users\ThinkPad\AppData\Roaming\yazi\config'  
