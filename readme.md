@@ -7,6 +7,12 @@
         scoop install unar  
      11.5 for JSON preview  
         scoop install jq  
+     11.6 search file name  
+        scoop install fd  
+     11.7 search file content  
+        scoop install ripgrep  
+     11.8 search file  
+        scoop install fzf  
      - 配置文件路径  
      'C:\Users\ThinkPad\AppData\Roaming\yazi\config'  
      - 自动代码预览，无需安装bat;wezterm自动图片预览  
@@ -15,7 +21,7 @@
 
 
 ## 快捷键
----
+
 - a XX    创建XX文件  
 - a XX/   创建XX文件夹  
 
@@ -32,13 +38,14 @@
 - g <space>    目录跳转  
 
 ---
-- Z    fzf  
 - cd   copy parent directory  
 - <A-PageUp>    预览上移动  
 - <A-PageDown>  预览下移动  
 
 ---
 - S  rg搜索文件内容  
+- s  fd搜索文件名  
+- Z  fzf模糊搜索  
 
 ---
 - o        打开  
