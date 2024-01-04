@@ -147,7 +147,6 @@ keymap = [
 	{ on = [ "g", "t" ], exec = "cd 'C:/Users/ThinkPad/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState'", desc = "WindowsTerminal config" },
 	{ on = [ "g", "v" ], exec = "cd 'C:/Users/ThinkPad/AppData/Local/nvim'", desc = "neovim config" },
 	{ on = [ "g", "y" ], exec = "cd 'C:/Users/ThinkPad/AppData/Roaming/yazi/config'", desc = "yazi config" },
-	{ on = [ "g", "l" ], exec = "cd 'C:/Users/ThinkPad/AppData/Local/lf'", desc = "lf config" },
 	{ on = [ "g", "0" ], exec = "cd 'C:/Users/ThinkPad/AppData/Roaming/lazygit'", desc = "lazygit config" },
 	{ on = [ "g", "9" ], exec = "cd 'C:/Users/ThinkPad/.config/winfetch'", desc = "winfetch config" },
 	{ on = [ "g", "8" ], exec = "cd 'C:/Users/ThinkPad/AppData/Roaming/.goneovim'", desc = "goneovim config" },

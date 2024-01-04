@@ -24,6 +24,7 @@ tab_inactive = { fg = "#abb2bf", bg = "darkgray" }
 tab_width    = 1
 
 # Border
+# border_symbol = " "
 border_symbol = "│"
 border_style  = { fg = "#626880" }
 
@@ -42,7 +43,8 @@ syntect_theme = ""
 [status]
 separator_open  = ""
 separator_close = ""
-separator_style = { fg = "darkgray", bg = "darkgray" }
+# separator_style = { fg = "darkgray", bg = "darkgray" }
+separator_style = { fg = "darkgray", bg = "#2e3436" }
 
 # Mode
 mode_normal = { fg = "#2e3436", bg = "#89a0c3", bold = true }
