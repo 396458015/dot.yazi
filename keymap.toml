@@ -1,6 +1,6 @@
 [manager]
 
-prepend_keymap = [
+keymap = [
 	{ on = [ "<Esc>" ], exec = "escape",             desc = "Exit visual mode, clear selected, or cancel search" },
 	{ on = [ "q" ],     exec = "quit",               desc = "Exit the process" },
 	{ on = [ "Q" ],     exec = "quit --no-cwd-file", desc = "Exit the process without writing cwd-file" },
@@ -144,7 +144,7 @@ prepend_keymap = [
 	# { on = [ "g", "t" ],       exec = "cd /tmp",          desc = "Go to the temporary directory" },
 	{ on = [ "g", "<Space>" ], exec = "cd --interactive", desc = "Go to a directory interactively" },
 
-	{ on = [ "g", "d" ], exec = "cd 'C:/Users/ThinkPad/Desktop'", desc = "lazygit config" },
+	{ on = [ "g", "d" ], exec = "cd 'C:/Users/ThinkPad/Desktop'", desc = "Desktop" },
 	{ on = [ "g", "p" ], exec = "cd 'C:/Users/ThinkPad/Documents/PowerShell'", desc = "powershell config" },
 	{ on = [ "g", "a" ], exec = "cd 'C:/Users/ThinkPad/AppData/Roaming/alacritty'", desc = "alacritty config" },
 	{ on = [ "g", "w" ], exec = "cd 'C:/Users/ThinkPad/.config/wezterm'", desc = "wezterm config" },
@@ -163,7 +163,7 @@ prepend_keymap = [
 
 [tasks]
 
-prepend_keymap = [
+keymap = [
 	{ on = [ "<Esc>" ], exec = "close", desc = "Hide the task manager" },
 	{ on = [ "<C-q>" ], exec = "close", desc = "Hide the task manager" },
 	{ on = [ "w" ],     exec = "close", desc = "Hide the task manager" },
@@ -182,7 +182,7 @@ prepend_keymap = [
 
 [select]
 
-prepend_keymap = [
+keymap = [
 	{ on = [ "<C-q>" ],   exec = "close",          desc = "Cancel selection" },
 	{ on = [ "<Esc>" ],   exec = "close",          desc = "Cancel selection" },
 	{ on = [ "<Enter>" ], exec = "close --submit", desc = "Submit the selection" },
@@ -204,7 +204,7 @@ prepend_keymap = [
 
 [input]
 
-prepend_keymap = [
+keymap = [
 	{ on = [ "<C-q>" ],   exec = "close",          desc = "Cancel input" },
 	{ on = [ "<Enter>" ], exec = "close --submit", desc = "Submit the input" },
 	{ on = [ "<Esc>" ],   exec = "escape",         desc = "Go back the normal mode, or cancel input" },
@@ -269,7 +269,7 @@ prepend_keymap = [
 
 [completion]
 
-prepend_keymap = [
+keymap = [
 	{ on = [ "<C-q>" ], exec = "close",          desc = "Cancel completion" },
 	{ on = [ "<Tab>" ], exec = "close --submit", desc = "Submit the completion" },
 
@@ -284,7 +284,7 @@ prepend_keymap = [
 
 [help]
 
-prepend_keymap = [
+keymap = [
 	{ on = [ "<Esc>" ], exec = "escape", desc = "Clear the filter, or hide the help" },
 	{ on = [ "q" ],     exec = "close",  desc = "Exit the process" },
 	{ on = [ "<C-q>" ], exec = "close",  desc = "Hide the help" },
