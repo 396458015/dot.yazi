@@ -222,6 +222,7 @@ rules = [
 
 # Documents
     { name = "*.pdf"  ,text = "", fg = "#b30b00" },
+    { name = "*.caj"  ,text = "", fg = "#b30b00" },
     { name = "*.doc"  ,text = "", fg = "#185abd" },
     { name = "*.doct" ,text = "", fg = "#185abd" },
     { name = "*.docx" ,text = "", fg = "#185abd" },
@@ -313,10 +314,33 @@ rules = [
     { name = "*.nix"         ,text = "", fg = "#7ebae4" },
     { name = "*.m"           ,text = "", fg = "#c04c0b" },
     { name = "*.for"         ,text = "󱈚", fg = "#734f96" },
-    { name = "*.lnk"         ,text = "", fg = "#e3459f" },
+    { name = "*.lnk"         ,text = "", fg = "#e3459f" },
     { name = "*.opju"        ,text = "", fg = "#f66d54" },
+    { name = "*.log"         ,text = "", fg = "#6d8086" },
+    { name = "*.DAT"         ,text = "", fg = "#7ebae4" },
+    { name = "*.db"          ,text = "", fg = "#6d8086" },
+    { name = "*.dll"         ,text = "", fg = "#6d8086" },
+    { name = "*.ahk"         ,text = "", fg = "#019833" },
+    { name = "*.tmp"         ,text = "", fg = "#ffffff" },
+    { name = "*.el"          ,text = "", fg = "#7f5ab6" },
+    { name = "*.lib"         ,text = "", fg = "#ffffff" },
     { name = "Containerfile" ,text = "󰡨", fg = "#384d54" },
     { name = "Dockerfile"    ,text = "󰡨", fg = "#384d54" },
+
+    # Abaqus
+    { name = "*.cae"         ,text = "", fg = "#11a7a3" },
+    { name = "*.inp"         ,text = "", fg = "#11a7a3" },
+    { name = "*.rpy"         ,text = "", fg = "#ffe291" },
+    { name = "*.odb"         ,text = "", fg = "#11a7a3" },
+    { name = "*.com"         ,text = "", fg = "#11a7a3" },
+    # { name = "*.prt"         ,text = "", fg = "#11a7a3" },
+    { name = "*.prt"         ,text = "", fg = "#11a7a3" },
+    { name = "*.msg"         ,text = "", fg = "#11a7a3" },
+
+    # Hypermesh
+    { name = "*.hm"          ,text = "", fg = "#9394b5" },
+    { name = "*.stp"         ,text = "", fg = "#4273ca" },
+    { name = "*.cfg"         ,text = "", fg = "#6d8086" },
 
 # Misc
     { name = "*.bin" ,text = "", fg = "#05a6f0" },
@@ -325,8 +349,8 @@ rules = [
     { name = "*.bat" ,text = "", fg = "#C1F12E" },
 
 # Default
-    { name = "*"  ,text = "", fg = "#abb2bf" }, # files icon
-    { name = "*/" ,text = "", fg = "#9f86c4" }, # directories icon
+    { name = "*"  ,text = "" }, # files icon
+    { name = "*/" ,text = "" }, # directories icon
 ]
 
 # : }}}
