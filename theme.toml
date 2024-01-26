@@ -5,8 +5,15 @@
 [manager]
 cwd = { fg = "#8ae234" } #edit
 
-# Hovered
-hovered         = { fg = "#2e3436", bg = "#9f86c4" } #edit
+# Hovered 选项条颜色
+hovered         = { fg = "#2e3436", bg = "#b58900" }
+# hovered         = { fg = "#2e3436", bg = "#9f86c4" }
+# hovered         = { fg = "#2e3436", bg = "#bd93f9" }
+# hovered         = { fg = "#2e3436", bg = "#83a598" }
+# hovered         = { fg = "#2e3436", bg = "#80aefa" }
+# hovered         = { fg = "#2e3436", bg = "#ae5180" }
+# hovered         = { fg = "#2e3436", bg = "#859901" }
+
 preview_hovered = { underline = true }
 
 # Find
@@ -95,8 +102,8 @@ active   = { bg = "darkgray" }
 inactive = {}
 
 # Icons
-icon_file    = ""
-icon_folder  = ""
+icon_file    = ""  #   
+icon_folder  = ""  # 
 icon_command = ""
 
 # : }}}
@@ -165,9 +172,15 @@ rules = [
 	# { mime = "application/rtf",   fg = "green" },
 	# { mime = "application/vnd.*", fg = "green" },
 
-	# Fallback
+	# Fallback 文件和文件夹字体颜色
 	{ name = "*",  fg = "#abb2bf" }, # files font
-	{ name = "*/", fg = "#9f86c4" }, # directories font
+
+	{ name = "*/", fg = "#6c71c4" }, # directories font
+	# { name = "*/", fg = "#9f86c4" }, # directories font
+	# { name = "*/", fg = "#bd93f9" }, # directories font
+	# { name = "*/", fg = "#83a598" }, # directories font
+	# { name = "*/", fg = "#80aefa" }, # directories font
+	# { name = "*/", fg = "#ae5180" }, # directories font
 ]
 
 [icon]
@@ -203,7 +216,7 @@ rules = [
 
 # Text
     { name = "*.txt"   ,text = "", fg = "#89e051" },
-    { name = "*.md"    ,text = "", fg = "#ffffff" },
+    { name = "*.md"    ,text = "", fg = "#ffffff" },  # 
     { name = "*.tex"   ,text = "ﭨ", fg = "#3D6117" },
     { name = "*.org"   ,text = "", fg = "#5dbd7e" },
     { name = "*.norg"  ,text = "", fg = "#5dbd7e" },
@@ -263,18 +276,19 @@ rules = [
     { name = "*.webm" ,text = "", fg = "#9ea3de"  },
 
 # Images
-    { name = "*.jpg"  ,text = "", fg = "#3AFFDB" },
-    { name = "*.jpeg" ,text = "", fg = "#3AFFDB" },
-    { name = "*.tif"  ,text = "", fg = "#3AFFDB" },
-    { name = "*.png"  ,text = "", fg = "#3AFFDB" },
-    { name = "*.gif"  ,text = "", fg = "#3AFFDB" },
-    { name = "*.webp" ,text = "", fg = "#3AFFDB" },
-    { name = "*.avif" ,text = "", fg = "#3AFFDB" },
-    { name = "*.bmp"  ,text = "", fg = "#3AFFDB" },
-    { name = "*.ico"  ,text = "", fg = "#3AFFDB" },
-    { name = "*.svg"  ,text = "", fg = "#3AFFDB" },
-    { name = "*.xcf"  ,text = "", fg = "#3AFFDB" },
-    { name = "*.HEIC" ,text = "", fg = "#3AFFDB" },
+    { name = "*.jpg"  ,text = "", fg = "#3AFFDB" },  # 
+    { name = "*.jpeg" ,text = "", fg = "#3AFFDB" },  # 
+    { name = "*.tif"  ,text = "", fg = "#3AFFDB" },  # 
+    { name = "*.png"  ,text = "", fg = "#3AFFDB" },  # 
+    { name = "*.gif"  ,text = "", fg = "#3AFFDB" },  # 
+    { name = "*.emf"  ,text = "", fg = "#3AFFDB" },  # 
+    { name = "*.webp" ,text = "", fg = "#3AFFDB" },  # 
+    { name = "*.avif" ,text = "", fg = "#3AFFDB" },  # 
+    { name = "*.bmp"  ,text = "", fg = "#3AFFDB" },  # 
+    { name = "*.ico"  ,text = "", fg = "#3AFFDB" },  # 
+    { name = "*.svg"  ,text = "", fg = "#3AFFDB" },  # 
+    { name = "*.xcf"  ,text = "", fg = "#3AFFDB" },  # 
+    { name = "*.HEIC" ,text = "", fg = "#3AFFDB" },  # 
 
 # Programming
     { name = "*.c"           ,text = "", fg = "#519aba" },
@@ -313,10 +327,10 @@ rules = [
     { name = "*.lock"        ,text = "", fg = "#f80000" },
     { name = "*.nix"         ,text = "", fg = "#7ebae4" },
     { name = "*.m"           ,text = "", fg = "#c04c0b" },
-    { name = "*.for"         ,text = "󱈚", fg = "#734f96" },
+    { name = "*.for"         ,text = "", fg = "#bd93f9" },  # 󱈚
     { name = "*.lnk"         ,text = "", fg = "#e3459f" },
-    { name = "*.opju"        ,text = "", fg = "#f66d54" },
-    { name = "*.log"         ,text = "", fg = "#6d8086" },
+    { name = "*.opju"        ,text = "ﴝ", fg = "#f66d54" },
+    { name = "*.log"         ,text = "", fg = "#6d8086" },
     { name = "*.DAT"         ,text = "", fg = "#7ebae4" },
     { name = "*.db"          ,text = "", fg = "#6d8086" },
     { name = "*.dll"         ,text = "", fg = "#6d8086" },
@@ -335,10 +349,10 @@ rules = [
     { name = "*.com"         ,text = "", fg = "#11a7a3" },
     # { name = "*.prt"         ,text = "", fg = "#11a7a3" },
     { name = "*.prt"         ,text = "", fg = "#11a7a3" },
-    { name = "*.msg"         ,text = "", fg = "#11a7a3" },
+    { name = "*.msg"         ,text = "", fg = "#11a7a3" },  # 
 
     # Hypermesh
-    { name = "*.hm"          ,text = "", fg = "#9394b5" },
+    { name = "*.hm"          ,text = "ﴧ", fg = "#fa4616" },
     { name = "*.stp"         ,text = "", fg = "#4273ca" },
     { name = "*.cfg"         ,text = "", fg = "#6d8086" },
 
@@ -349,8 +363,8 @@ rules = [
     { name = "*.bat" ,text = "", fg = "#C1F12E" },
 
 # Default
-    { name = "*"  ,text = "" }, # files icon
-    { name = "*/" ,text = "" }, # directories icon
+    { name = "*"  ,text = "" }, # files icon   
+    { name = "*/" ,text = "" }, # directories icon 
 ]
 
 # : }}}
