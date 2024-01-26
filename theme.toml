@@ -274,6 +274,7 @@ rules = [
     { name = "*.avi"  ,text = "", fg = "#9ea3de"  },
     { name = "*.mov"  ,text = "", fg = "#9ea3de" },
     { name = "*.webm" ,text = "", fg = "#9ea3de"  },
+    { name = "*.rmvb" ,text = "", fg = "#9ea3de"  },
 
 # Images
     { name = "*.jpg"  ,text = "", fg = "#3AFFDB" },  # 
@@ -344,19 +345,24 @@ rules = [
     { name = "Containerfile" ,text = "󰡨", fg = "#384d54" },
     { name = "Dockerfile"    ,text = "󰡨", fg = "#384d54" },
 
-    # Abaqus
+    # CAD
+    { name = "*.stp"         ,text = "", fg = "#4273ca" },
+    { name = "*.step"        ,text = "", fg = "#4273ca" },
+    { name = "*.igs"         ,text = "", fg = "#4273ca" },
+    { name = "*.iges"        ,text = "", fg = "#4273ca" },
+    { name = "*.x_t"         ,text = "", fg = "#4273ca" },
+
+    # CAE-Abaqus
     { name = "*.cae"         ,text = "", fg = "#11a7a3" },
     { name = "*.inp"         ,text = "", fg = "#11a7a3" },
     { name = "*.rpy"         ,text = "", fg = "#ffe291" },
     { name = "*.odb"         ,text = "", fg = "#11a7a3" },
     { name = "*.com"         ,text = "", fg = "#11a7a3" },
-    # { name = "*.prt"         ,text = "", fg = "#11a7a3" },
     { name = "*.prt"         ,text = "", fg = "#11a7a3" },
     { name = "*.msg"         ,text = "", fg = "#11a7a3" },  # 
 
-    # Hypermesh
+    # CAE-Hypermesh
     { name = "*.hm"          ,text = "ﴧ", fg = "#fa4616" },
-    { name = "*.stp"         ,text = "", fg = "#4273ca" },
     { name = "*.cfg"         ,text = "", fg = "#6d8086" },
 
 # Misc
