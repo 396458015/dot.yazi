@@ -316,7 +316,7 @@ rules = [
     { name = "*.vim"         ,text = "", fg = "#019833" },
 	{ name = "*.lua"         ,text = "", fg = "#51a0cf" },
     { name = "*.html"        ,text = "", fg = "#e34c26" },
-    { name = "*.css"         ,text = "", fg = "#61afef" },
+    { name = "*.css"         ,text = "", fg = "#61afef" },
     { name = "*.scss"        ,text = "", fg = "#f55385" },
     { name = "*.json"        ,text = "", fg = "#cbcb41" },
     { name = "*.toml"        ,text = "", fg = "#6d8086" },
@@ -338,6 +338,9 @@ rules = [
     { name = "*.tmp"         ,text = "", fg = "#ffffff" },
     { name = "*.el"          ,text = "", fg = "#7f5ab6" },
     { name = "*.lib"         ,text = "", fg = "#ffffff" },
+    { name = "*.dic"         ,text = "﬜", fg = "#f77a91" },
+    { name = "*.ttf"         ,text = "", fg = "#ECECEC" },
+    { name = "*.otf"         ,text = "", fg = "#ECECEC" },
     { name = "Containerfile" ,text = "󰡨", fg = "#384d54" },
     { name = "Dockerfile"    ,text = "󰡨", fg = "#384d54" },
 
@@ -358,7 +361,8 @@ rules = [
 
 # Misc
     { name = "*.bin" ,text = "", fg = "#05a6f0" },
-    { name = "*.exe" ,text = "", fg = "#9F0500" },
+    { name = "*.exe" ,text = "", fg = "#f00f0a" },
+    # { name = "*.exe" ,text = "", fg = "#9F0500" },
     { name = "*.pkg" ,text = "", fg = "#10bb10" },
     { name = "*.bat" ,text = "", fg = "#C1F12E" },
 
