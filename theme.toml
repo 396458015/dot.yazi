@@ -342,6 +342,7 @@ rules = [
     { name = "*.dic"         ,text = "﬜", fg = "#f77a91" },
     { name = "*.ttf"         ,text = "", fg = "#ECECEC" },
     { name = "*.otf"         ,text = "", fg = "#ECECEC" },
+    { name = "*.xml"        ,text = "謹", fg = "#e34c26" },
     { name = "Containerfile" ,text = "󰡨", fg = "#384d54" },
     { name = "Dockerfile"    ,text = "󰡨", fg = "#384d54" },
 
