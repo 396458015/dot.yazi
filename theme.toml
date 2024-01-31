@@ -368,7 +368,7 @@ rules = [
 
 # Misc
     { name = "*.bin" ,text = "", fg = "#05a6f0" },
-    { name = "*.exe" ,text = "", fg = "#f00f0a" },
+    { name = "*.exe" ,text = "", fg = "#00fa9a" },
     # { name = "*.exe" ,text = "", fg = "#9F0500" },
     { name = "*.pkg" ,text = "", fg = "#10bb10" },
     { name = "*.bat" ,text = "", fg = "#C1F12E" },
