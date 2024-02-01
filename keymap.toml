@@ -148,7 +148,6 @@ keymap = [
 	{ on = [ "g", "p" ], exec = "cd 'C:/Users/ThinkPad/Documents/PowerShell'", desc = "powershell config" },
 	{ on = [ "g", "a" ], exec = "cd 'C:/Users/ThinkPad/AppData/Roaming/alacritty'", desc = "alacritty config" },
 	{ on = [ "g", "w" ], exec = "cd 'C:/Users/ThinkPad/.config/wezterm'", desc = "wezterm config" },
-	{ on = [ "g", "t" ], exec = "cd 'C:/Users/ThinkPad/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState'", desc = "WindowsTerminal config" },
 	{ on = [ "g", "v" ], exec = "cd 'C:/Users/ThinkPad/AppData/Local/nvim'", desc = "neovim config" },
 	{ on = [ "g", "y" ], exec = "cd 'C:/Users/ThinkPad/AppData/Roaming/yazi/config'", desc = "yazi config" },
 	{ on = [ "g", "l" ], exec = "cd 'C:/Users/ThinkPad/AppData/Roaming/lazygit'", desc = "lazygit config" },
