@@ -217,7 +217,7 @@ rules = [
 # Text
     { name = "*.txt"   ,text = "", fg = "#89e051" },
     { name = "*.md"    ,text = "", fg = "#ffffff" },  # 
-    { name = "*.tex"   ,text = "ﭨ", fg = "#3D6117" },
+    { name = "*.tex"   ,text = "ﭨ", fg = "#46c8a8" },
     { name = "*.org"   ,text = "", fg = "#5dbd7e" },
     { name = "*.norg"  ,text = "", fg = "#5dbd7e" },
     { name = "*.rst"   ,text = "", fg = "#7e60c0" },
