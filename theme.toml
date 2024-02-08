@@ -122,6 +122,7 @@ hovered = { underline = true }
 # : Which {{{
 
 [which]
+cols = 2
 mask            = { bg = "#1e1e2e" } #edit
 cand            = { fg = "#9cdcfe" } #edit
 rest            = { fg = "darkgray" }
