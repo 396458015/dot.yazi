@@ -116,6 +116,11 @@ previewers = [
 	# Fallback
 	{ name = "*", exec = "file" },
 ]
+# plugin:glow.yazi
+prepend_previewers = [
+  { name = "*.md", exec = "glow" },
+]
+
 
 [input]
 # cd
