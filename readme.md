@@ -7,11 +7,20 @@
         scoop install unar  
      11.5 for JSON preview  
         scoop install jq  
-     11.6 search file name  
+     11.6 for pdf preview  
+        scoop install poppler  
+        注意: Windows仅wezterm支持图片和pdf的预览,pdf预览是通过poppler里面的pdftoppm;  
+              系统如果安装texlive会使texlive中的pdftoppm成为系统默认,导致yazi中pdf不能预览;  
+              查询pdftoppm路径,在PS中'which pdftoppm';  
+              解决办法:在系统变量PATH中,将poppler的路径放置在texlive前面.  
+                       即:C:\Users\ThinkPad\scoop\apps\poppler\23.11.0-0\bin  
+                          D:\Program Files\texlive\2023\bin\windows  
+              修改后'which pdftoppm'结果为'C:\Users\ThinkPad\scoop\apps\poppler\23.11.0-0\bin\pdftoppm.exe', 且不影响texlive的预览.  
+     11.7 search file name  
         scoop install fd  
-     11.7 search file content  
+     11.8 search file content  
         scoop install ripgrep  
-     11.8 fuzzy search file  
+     11.9 fuzzy search file  
         scoop install fzf  
      - 配置文件路径  
      'C:\Users\ThinkPad\AppData\Roaming\yazi\config'  
