@@ -376,7 +376,7 @@ rules = [
 
 # Default
     { name = "*"  ,text = "" }, # files icon   
-    { name = "*/" ,text = "" }, # directories icon 
+    { name = "*/" ,text = "" }, # directories icon  
 ]
 
 # : }}}
