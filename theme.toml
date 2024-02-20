@@ -200,7 +200,7 @@ rules = [
     { name = ".config/"     ,text = "" },
 
 # Git
-    { name = ".git/"          ,text = "", fg = "#F14C28" },
+    { name = ".git/"          ,text = "", fg = "#ff8800" },  # 
     { name = ".gitignore"     ,text = "", fg = "#41535b" },
     { name = ".gitmodules"    ,text = "", fg = "#41535b" },
     { name = ".gitattributes" ,text = "", fg = "#41535b" },
