@@ -19,8 +19,8 @@ keymap = [
 
 	{ on = [ "<C-u>" ], exec = "arrow -50%",  desc = "Move cursor up half page" },
 	{ on = [ "<C-d>" ], exec = "arrow 50%",   desc = "Move cursor down half page" },
-	{ on = [ "<C-b>" ], exec = "arrow -100%", desc = "Move cursor up one page" },
-	{ on = [ "<C-f>" ], exec = "arrow 100%",  desc = "Move cursor down one page" },
+	# { on = [ "<C-b>" ], exec = "arrow -100%", desc = "Move cursor up one page" },
+	# { on = [ "<C-f>" ], exec = "arrow 100%",  desc = "Move cursor down one page" },
 
 	{ on = [ "<C-PageUp>" ],   exec = "arrow -50%",  desc = "Move cursor up half page" },
 	{ on = [ "<C-PageDown>" ], exec = "arrow 50%",   desc = "Move cursor down half page" },
@@ -33,10 +33,12 @@ keymap = [
 	{ on = [ "H" ], exec = "back",    desc = "Go back to the previous directory" },
 	{ on = [ "L" ], exec = "forward", desc = "Go forward to the next directory" },
 
-	{ on = [ "<A-k>" ], exec = "seek -5", desc = "seek up 5 units in the preview" },
-	{ on = [ "<A-j>" ], exec = "seek 5",  desc = "seek down 5 units in the preview" },
-	{ on = [ "<A-PageUp>" ],   exec = "seek -5", desc = "seek up 5 units in the preview" },
-	{ on = [ "<A-PageDown>" ], exec = "seek 5",  desc = "seek down 5 units in the preview" },
+	# { on = [ "<A-k>" ], exec = "seek -5", desc = "seek up 5 units in the preview" },
+	# { on = [ "<A-j>" ], exec = "seek 5",  desc = "seek down 5 units in the preview" },
+	# { on = [ "<A-PageUp>" ],   exec = "seek -5", desc = "seek up 5 units in the preview" },
+	# { on = [ "<A-PageDown>" ], exec = "seek 5",  desc = "seek down 5 units in the preview" },
+	{ on = [ "<C-b>" ], exec = "seek -5", desc = "seek up 5 units in the preview" },
+	{ on = [ "<C-f>" ], exec = "seek 5",  desc = "seek down 5 units in the preview" },
 
 	{ on = [ "<Up>" ],    exec = "arrow -1", desc = "Move cursor up" },
 	{ on = [ "<Down>" ],  exec = "arrow 1",  desc = "Move cursor down" },
