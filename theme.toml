@@ -1,43 +1,45 @@
 # vim:fileencoding=utf-8:foldmethod=marker
 
+# : Flavor {{{
+
+[flavor]
+use = ""
+
+# : }}}
+
 # : Manager {{{
 
 [manager]
 cwd = { fg = "#8ae234" }  # 左上角路径颜色
 
 # Hovered 选项条颜色
-hovered         = { fg = "#2e3436", bg = "#b58900" }
-# hovered         = { fg = "#2e3436", bg = "#9f86c4" }
-# hovered         = { fg = "#2e3436", bg = "#bd93f9" }
-# hovered         = { fg = "#2e3436", bg = "#83a598" }
-# hovered         = { fg = "#2e3436", bg = "#80aefa" }
-# hovered         = { fg = "#2e3436", bg = "#ae5180" }
-# hovered         = { fg = "#2e3436", bg = "#859901" }
-
+hovered         = { fg = "#2e3436", bg = "#b58900", bold = true }
 preview_hovered = { underline = true }
 
 # Find
-find_keyword  = { fg = "#cc0000", bg = "reset", bold = true } #edit
-find_position = { fg = "#ae6485", bg = "reset", italic = true } #edit
+find_keyword  = { fg = "#b00000", bold = true, italic = true, underline = true }
+find_position = { fg = "#ae6485", bg = "reset", bold = true, italic = true }
 
 # Marker
 marker_selected = { fg = "lightgreen",  bg = "lightgreen" }
 marker_copied   = { fg = "lightyellow", bg = "lightyellow" }
 marker_cut      = { fg = "lightred",    bg = "lightred" }
+marker_marked   = { fg = "#89a0c3",     bg = "#89a0c3" }
 
 # Tab
-tab_active   = { fg = "#2e3436", bg = "#ae6485" } #edit
+tab_active   = { fg = "#2e3436", bg = "#ae6485" }
 tab_inactive = { fg = "#abb2bf", bg = "darkgray" }
 tab_width    = 1
+
+# Count
+count_selected = { fg = "black", bg = "lightgreen" }
+count_copied   = { fg = "black", bg = "lightyellow" }
+count_cut      = { fg = "black", bg = "lightred" }
 
 # Border
 # border_symbol = " "
 border_symbol = "│"
 border_style  = { fg = "#626880" }
-
-# Offset
-folder_offset  = [ 1, 0, 1, 0 ]
-preview_offset = [ 1, 1, 1, 1 ]
 
 # Highlighting
 syntect_theme = ""
@@ -50,7 +52,6 @@ syntect_theme = ""
 [status]
 separator_open  = ""
 separator_close = ""
-# separator_style = { fg = "darkgray", bg = "darkgray" }
 separator_style = { fg = "darkgray", bg = "#2e3436" }
 
 # Mode
@@ -76,8 +77,8 @@ permissions_s = { fg = "darkgray" }
 # : Select {{{
 
 [select]
-border   = { fg = "#ae6485" } #edit
-active   = { fg = "magenta" }
+border   = { fg = "#ae6485" }
+active   = { fg = "magenta", bold = true }
 inactive = {}
 
 # : }}}
@@ -86,7 +87,7 @@ inactive = {}
 # : Input {{{
 
 [input]
-border   = { fg = "#ae6485" } #edit
+border   = { fg = "#ae6485" }
 title    = {}
 value    = {}
 selected = { reversed = true }
@@ -97,7 +98,7 @@ selected = { reversed = true }
 # : Completion {{{
 
 [completion]
-border   = { fg = "#ae6485" } #edit
+border   = { fg = "#ae6485" }
 active   = { bg = "darkgray" }
 inactive = {}
 
@@ -112,7 +113,7 @@ icon_command = ""
 # : Tasks {{{
 
 [tasks]
-border  = { fg = "#ae6485" } #edit
+border  = { fg = "#ae6485" }
 title   = {}
 hovered = { underline = true }
 
@@ -123,11 +124,11 @@ hovered = { underline = true }
 
 [which]
 cols = 2
-mask            = { bg = "#1e1e2e" } #edit
-cand            = { fg = "#9cdcfe" } #edit
+mask            = { bg = "#1e1e2e" }
+cand            = { fg = "#9cdcfe" }
 rest            = { fg = "darkgray" }
-desc            = { fg = "#ae6485" } #edit
-separator       = "  " #edit
+desc            = { fg = "#ae6485" }
+separator       = "  "
 separator_style = { fg = "darkgray" }
 
 # : }}}
@@ -141,6 +142,21 @@ exec    = { fg = "cyan" }
 desc    = { fg = "gray" }
 hovered = { bg = "darkgray", bold = true }
 footer  = { fg = "#2e3436", bg = "#abb2bf" }
+
+# : }}}
+
+
+# : Notify {{{
+
+[notify]
+title_info  = { fg = "green" }
+title_warn  = { fg = "yellow" }
+title_error = { fg = "red" }
+
+# Icons
+icon_info  = ""
+icon_warn  = ""
+icon_error = ""
 
 # : }}}
 
@@ -201,9 +217,9 @@ rules = [
 
 # Git
     { name = ".git/"          ,text = "", fg = "#ff8800" },  # 
-    { name = ".gitignore"     ,text = "", fg = "#41535b" },
-    { name = ".gitmodules"    ,text = "", fg = "#41535b" },
-    { name = ".gitattributes" ,text = "", fg = "#41535b" },
+    { name = ".gitignore"     ,text = "", fg = "#ff8800" },
+    { name = ".gitmodules"    ,text = "", fg = "#ff8800" },
+    { name = ".gitattributes" ,text = "", fg = "#ff8800" },
 
 # Dotfiles
     { name = ".DS_Store"    ,text = "", fg = "#6d8086"},
@@ -322,8 +338,8 @@ rules = [
     { name = "*.scss"        ,text = "", fg = "#f55385" },
     { name = "*.json"        ,text = "", fg = "#cbcb41" },
     { name = "*.toml"        ,text = "", fg = "#6d8086" },
-    { name = "*.yml"         ,text = "", fg = "#6d8086" },
-    { name = "*.yaml"        ,text = "", fg = "#6d8086" },
+    { name = "*.yml"         ,text = "", fg = "#6d8086" },
+    { name = "*.yaml"        ,text = "", fg = "#6d8086" },
     { name = "*.ini"         ,text = "", fg = "#6d8086" },
     { name = "*.conf"        ,text = "", fg = "#6d8086" },
     { name = "*.lock"        ,text = "", fg = "#f80000" },
