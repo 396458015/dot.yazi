@@ -39,7 +39,7 @@ count_cut      = { fg = "black", bg = "lightred" }
 # Border
 # border_symbol = " "
 border_symbol = "│"
-border_style  = { fg = "#626880" }
+border_style  = { fg = "#3b3e4d" }
 
 # Highlighting
 syntect_theme = ""
