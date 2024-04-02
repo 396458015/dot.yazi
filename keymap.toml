@@ -151,6 +151,7 @@ keymap = [
 	{ on = [ "g", "a" ], run = "cd 'C:/Users/ThinkPad/AppData/Roaming/alacritty'", desc = "alacritty config" },
 	{ on = [ "g", "w" ], run = "cd 'C:/Users/ThinkPad/.config/wezterm'", desc = "wezterm config" },
 	{ on = [ "g", "v" ], run = "cd 'C:/Users/ThinkPad/AppData/Local/nvim'", desc = "neovim config" },
+	{ on = [ "g", "V" ], run = "cd 'C:/Users/ThinkPad/AppData/Roaming/Code/User'", desc = "Vscode config" },
 	{ on = [ "g", "y" ], run = "cd 'C:/Users/ThinkPad/AppData/Roaming/yazi/config'", desc = "yazi config" },
 	{ on = [ "g", "l" ], run = "cd 'C:/Users/ThinkPad/AppData/Roaming/lazygit'", desc = "lazygit config" },
 	{ on = [ "g", "r" ], run = "cd 'C:/Users/ThinkPad/AppData/Roaming/Rime'", desc = "Rime" },
