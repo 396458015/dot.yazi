@@ -167,21 +167,21 @@ icon_error = ""
 
 rules = [
 	# Images
-	{ mime = "image/*", fg = "cyan" },
+	{ mime = "image/*", fg = "cyan", bold = true },
 
 	# Videos
-	{ mime = "video/*", fg = "#9ea3de" },
-	{ mime = "audio/*", fg = "#9ea3de" },
+	{ mime = "video/*", fg = "#9ea3de", bold = true },
+	{ mime = "audio/*", fg = "#9ea3de", bold = true },
 
 	# Archives
-	{ mime = "application/zip",             fg = "#f4b8e4" },
-	{ mime = "application/gzip",            fg = "#f4b8e4" },
-	{ mime = "application/x-tar",           fg = "#f4b8e4" },
-	{ mime = "application/x-bzip",          fg = "#f4b8e4" },
-	{ mime = "application/x-bzip2",         fg = "#f4b8e4" },
-	{ mime = "application/x-7z-compressed", fg = "#f4b8e4" },
-	{ mime = "application/x-rar",           fg = "#f4b8e4" },
-	{ mime = "application/xz",              fg = "#f4b8e4" },
+	{ mime = "application/zip",             fg = "#f4b8e4", bold = true },
+	{ mime = "application/gzip",            fg = "#f4b8e4", bold = true },
+	{ mime = "application/x-tar",           fg = "#f4b8e4", bold = true },
+	{ mime = "application/x-bzip",          fg = "#f4b8e4", bold = true },
+	{ mime = "application/x-bzip2",         fg = "#f4b8e4", bold = true },
+	{ mime = "application/x-7z-compressed", fg = "#f4b8e4", bold = true },
+	{ mime = "application/x-rar",           fg = "#f4b8e4", bold = true },
+	{ mime = "application/xz",              fg = "#f4b8e4", bold = true },
 
 	# Documents
 	# { mime = "application/doc",   fg = "green" },
@@ -190,9 +190,9 @@ rules = [
 	# { mime = "application/vnd.*", fg = "green" },
 
 	# Fallback 文件和文件夹字体颜色
-	{ name = "*",  fg = "#abb2bf" }, # files font
+	{ name = "*",  fg = "#abb2bf", bold = true }, # files font
 
-	{ name = "*/", fg = "#6c71c4" }, # directories font
+	{ name = "*/", fg = "#6c71c4", bold = true }, # directories font
 	# { name = "*/", fg = "#9f86c4" }, # directories font
 	# { name = "*/", fg = "#bd93f9" }, # directories font
 	# { name = "*/", fg = "#83a598" }, # directories font
