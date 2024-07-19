@@ -21,55 +21,42 @@ image_quality   = 75
 sixel_fraction  = 15
 
 [opener]
-edit = [
-	{ run = '$EDITOR "$@"', block = true,  for = "unix" },
-	# { run = 'code "%*"',    orphan = true, for = "windows" },
-	{ run = 'nvim "%*"',    block = true, for = "windows" },
+nvim = [
+	{ run = 'nvim "%*"',    block = true, desc = "Neovim", for = "windows" },
 ]
 open = [
-	{ run = 'xdg-open "$@"',             desc = "Open", for = "linux" },
-	{ run = 'open "$@"',                 desc = "Open", for = "macos" },
-	{ run = 'start "" "%1"', orphan = true, desc = "Open", for = "windows" },
-]
-reveal = [
-	{ run = 'open -R "$1"',                          desc = "Reveal", for = "macos" },
-	# { run = 'explorer /select, "%1"', orphan = true, desc = "Reveal", for = "windows" },
-	{ run = 'start "" "%1"', orphan = true, desc = "Open", for = "windows" },
-	{ run = '''exiftool "$1"; echo "Press enter to exit"; read _''', block = true, desc = "Show EXIF", for = "unix" },
+	{ run = 'start "" "%1"', orphan = true, desc = "Open by default", for = "windows" },
 ]
 extract = [
-	{ run = 'unar "$1"', desc = "Extract here", for = "unix" },
 	{ run = 'unar "%1"', desc = "Extract here", for = "windows" },
 ]
 play = [
-	{ run = 'mpv "$@"', orphan = true, for = "unix" },
-	{ run = 'mpv "%1"', orphan = true, for = "windows" },
-	{ run = '''mediainfo "$1"; echo "Press enter to exit"; read _''', block = true, desc = "Show media info", for = "unix" },
+	{ run = 'mpv "%1"', orphan = true, desc = "MPV", for = "windows" },
 ]
 
 [open]
 rules = [
-	{ name = "*/", use = [ "edit", "open", "reveal" ] },
+	{ name = "*/", use = [ "open" ] },
 
-	{ mime = "text/*",  use = [ "edit", "reveal" ] },
-	{ mime = "image/*", use = [ "open", "reveal" ] },
-	{ mime = "video/*", use = [ "play", "reveal" ] },
-	{ mime = "audio/*", use = [ "play", "reveal" ] },
-	{ mime = "inode/x-empty", use = [ "edit", "reveal" ] },
+	{ mime = "text/*",  use = [ "nvim", "open" ] },
+	{ mime = "image/*", use = [ "open" ] },
+	{ mime = "video/*", use = [ "play" ] },
+	{ mime = "audio/*", use = [ "play" ] },
+	{ mime = "inode/x-empty", use = [ "nvim", "open" ] },
 
-	{ mime = "application/json", use = [ "edit", "reveal" ] },
-	{ mime = "*/javascript",     use = [ "edit", "reveal" ] },
+	{ mime = "application/json", use = [ "nvim", "open" ] },
+	{ mime = "*/javascript",     use = [ "nvim", "open" ] },
 
-	{ mime = "application/zip",             use = [ "extract", "reveal" ] },
-	{ mime = "application/gzip",            use = [ "extract", "reveal" ] },
-	{ mime = "application/x-tar",           use = [ "extract", "reveal" ] },
-	{ mime = "application/x-bzip",          use = [ "extract", "reveal" ] },
-	{ mime = "application/x-bzip2",         use = [ "extract", "reveal" ] },
-	{ mime = "application/x-7z-compressed", use = [ "extract", "reveal" ] },
-	{ mime = "application/x-rar",           use = [ "extract", "reveal" ] },
-    { mime = "application/xz",              use = [ "extract", "reveal" ] },
+	{ mime = "application/zip",             use = [ "open", "extract" ] },
+	{ mime = "application/gzip",            use = [ "open", "extract" ] },
+	{ mime = "application/x-tar",           use = [ "open", "extract" ] },
+	{ mime = "application/x-bzip",          use = [ "open", "extract" ] },
+	{ mime = "application/x-bzip2",         use = [ "open", "extract" ] },
+	{ mime = "application/x-7z-compressed", use = [ "open", "extract" ] },
+	{ mime = "application/x-rar",           use = [ "open", "extract" ] },
+    { mime = "application/xz",              use = [ "open", "extract" ] },
 
-	{ mime = "*", use = [ "open", "reveal" ] },
+	{ mime = "*", use = [ "nvim", "open" ] },
 ]
 
 [tasks]
