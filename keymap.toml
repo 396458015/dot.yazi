@@ -154,6 +154,7 @@ keymap = [
 	{ on = [ "g", "V" ], run = "cd 'C:/Users/ThinkPad/AppData/Roaming/Code/User'", desc = "Vscode config" },
 	{ on = [ "g", "y" ], run = "cd 'C:/Users/ThinkPad/AppData/Roaming/yazi/config'", desc = "yazi config" },
 	{ on = [ "g", "l" ], run = "cd 'C:/Users/ThinkPad/AppData/Roaming/lazygit'", desc = "lazygit config" },
+	{ on = [ "g", "s" ], run = "cd 'C:/Users/ThinkPad/AppData/Roaming/Microsoft/Windows/Start Menu/Programs'", desc = "lazygit config" },
 	{ on = [ "g", "9" ], run = "cd 'C:/Users/ThinkPad/.config/winfetch'", desc = "winfetch config" },
 	{ on = [ "g", "8" ], run = "cd 'C:/Users/ThinkPad/AppData/Roaming/.goneovim'", desc = "goneovim config" },
 
