@@ -11,7 +11,7 @@ use = ""
 # : Manager {{{
 
 [manager]
-cwd = { fg = "#40a02b" }  # 左上角路径颜色 (Latte)
+cwd = { fg = "#b00000" }  # 左上角路径颜色 (Latte)
 
 # Hovered 选项条颜色
 hovered         = { fg = "#2e3436", bg = "#8caaee", bold = true }  # Latte
