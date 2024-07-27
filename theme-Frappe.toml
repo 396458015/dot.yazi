@@ -1,5 +1,5 @@
 # vim:fileencoding=utf-8:foldmethod=marker
-# catppuccin-Latte
+# catppuccin-Frappe
 
 # : Flavor {{{
 
@@ -11,11 +11,10 @@ use = ""
 # : Manager {{{
 
 [manager]
-cwd = { fg = "#40a02b" }  # 左上角路径颜色 (Latte)
+cwd = { fg = "#8ae234" }  # 左上角路径颜色 (Frappe)
 
 # Hovered 选项条颜色
-hovered         = { fg = "#2e3436", bg = "#8caaee", bold = true }  # Latte
-
+hovered         = { fg = "#2e3436", bg = "#b58900", bold = true }  # Frappe
 
 preview_hovered = { underline = true }
 
@@ -54,17 +53,17 @@ syntect_theme = ""
 [status]
 separator_open  = ""
 separator_close = ""
-separator_style = { fg = "darkgray", bg = "#7287fd" }  # Latte
+separator_style = { fg = "darkgray", bg = "#2e3436" }  # Frappe
 
 # Mode
-mode_normal = { fg = "#89a0c3", bg = "#eff1f5", bold = true }  # Latte
-mode_select = { fg = "lightgreen", bg = "#eff1f5", bold = true }  # Latte
-mode_unset  = { fg = "lightmagenta", bg = "#eff1f5", bold = true }  # Latte
+mode_normal = { fg = "#2e3436", bg = "#89a0c3", bold = true }  # Frappe
+mode_select = { fg = "#2e3436", bg = "lightgreen", bold = true }  # Frappe
+mode_unset  = { fg = "#2e3436", bg = "lightmagenta", bold = true }  # Frappe
 
 # Progress
 progress_label  = { bold = true }
-progress_normal = { fg = "#eeeeee", bg = "#7287fd" }  # Latte
-progress_error  = { fg = "red", bg = "#7287fd" }  # Latte
+progress_normal = { fg = "#89a0c3", bg = "#2e3436" }  # Frappe
+progress_error  = { fg = "red", bg = "#2e3436" }  # Frappe
 
 # Permissions
 permissions_t = { fg = "lightgreen" }
@@ -121,8 +120,8 @@ hovered = { underline = true }
 
 [which]
 cols = 2
-mask            = { bg = "#eff1f5" }  # Latte
-cand            = { fg = "#6c71c4" }  # Latte
+mask            = { bg = "#1e1e2e" }  # Frappe
+cand            = { fg = "#9cdcfe" }  # Frappe
 rest            = { fg = "darkgray" }
 desc            = { fg = "#ae6485" }
 separator       = "  "
@@ -184,7 +183,7 @@ rules = [
 	# { mime = "application/vnd.*", fg = "green" },
 
 	# Fallback 文件和文件夹字体颜色
-	{ name = "*",  fg = "#4c4f69", bold = true }, # files font (Latte)
+	{ name = "*",  fg = "#abb2bf", bold = true }, # files font (Frappe)
 
 	{ name = "*/", fg = "#6c71c4", bold = true }, # directories font
 	# { name = "*/", fg = "#9f86c4" }, # directories font
