@@ -1,4 +1,5 @@
 ## yazi
+     配置路径 'C:\Users\ThinkPad\AppData\Roaming\yazi\config'  
      11.1. Download Git from https://git-scm.com/download/win.  
      11.2. Append C:\Program Files\Git\usr\bin to the PATH environment variable, note that depends on your Git installation path.  
      例如将D:\Program Files\Git\usr\bin加入到环境变量，同时加入到'用户变量'和'系统变量'的path  
