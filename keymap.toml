@@ -316,3 +316,11 @@ keymap = [
 	# Filtering
 	{ on = [ "/" ], run = "filter", desc = "Apply a filter for the help items" },
 ]
+
+## Plugin keymaps
+# ouch.yazi
+[[manager.prepend_keymap]]
+on = ["c", "a"]
+run = "plugin ouch --args=zip"
+desc = "Compress with ouch"
+

@@ -5,6 +5,7 @@
      11.3. scoop install yazi  
      11.4 for zip/rar preview  
         scoop install unar  
+        scoop install ouch  
      11.5 for JSON preview  
         scoop install jq  
      11.6 for pdf preview  

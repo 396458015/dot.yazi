@@ -44,7 +44,7 @@ border_symbol = "│"
 border_style  = { fg = "#3b3e4d" }
 
 # Highlighting
-syntect_theme = ""
+syntect_theme = "C:/Users/ThinkPad/AppData/Roaming/yazi/config/bat-themes/Catppuccin Frappe.tmTheme"
 
 # : }}}
 

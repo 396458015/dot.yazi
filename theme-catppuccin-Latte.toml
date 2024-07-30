@@ -25,7 +25,7 @@ find_position = { fg = "#ae6485", bg = "reset", bold = true, italic = true }
 
 # Marker
 marker_selected = { fg = "lightgreen",  bg = "lightgreen" }
-marker_copied   = { fg = "lightyellow", bg = "lightyellow" }
+marker_copied   = { fg = "#df8e1d", bg = "#df8e1d" }
 marker_cut      = { fg = "lightred",    bg = "lightred" }
 marker_marked   = { fg = "#89a0c3",     bg = "#89a0c3" }
 
@@ -36,7 +36,7 @@ tab_width    = 1
 
 # Count
 count_selected = { fg = "black", bg = "lightgreen" }
-count_copied   = { fg = "black", bg = "lightyellow" }
+count_copied   = { fg = "black", bg = "#df8e1d" }
 count_cut      = { fg = "black", bg = "lightred" }
 
 # Border
@@ -45,7 +45,7 @@ border_symbol = "│"
 border_style  = { fg = "#3b3e4d" }
 
 # Highlighting
-syntect_theme = ""
+syntect_theme = "C:/Users/ThinkPad/AppData/Roaming/yazi/config/bat-themes/Catppuccin Latte.tmTheme"
 
 # : }}}
 
@@ -121,7 +121,7 @@ hovered = { underline = true }
 
 [which]
 cols = 2
-mask            = { bg = "#eff1f5" }  # Latte
+mask            = { bg = "#d3d3d3" }  # Latte
 cand            = { fg = "#6c71c4" }  # Latte
 rest            = { fg = "darkgray" }
 desc            = { fg = "#ae6485" }
@@ -227,7 +227,7 @@ rules = [
 
 # Text
     { name = "*.txt"   ,text = "", fg = "#89e051" },
-    { name = "*.md"    ,text = "", fg = "#ffffff" },  # 
+    { name = "*.md"    ,text = "", fg = "#000000" },  # 
     { name = "*.tex"   ,text = "ﭨ", fg = "#46c8a8" },
     { name = "*.org"   ,text = "", fg = "#5dbd7e" },
     { name = "*.norg"  ,text = "", fg = "#5dbd7e" },
