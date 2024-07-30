@@ -29,6 +29,14 @@
      - 若要通过mpv播放视频,需要将mpv的安装路径增加到环境变量中的'用户变量'  
        如D:\Program Files\mpv-x86_64-20220424-git-9d133eb加入到'用户变量'  
 
+# 注意
+  1. yazi预览代码的高亮渲染配置  
+     1.1 yazi预览代码是通过bat工具完成的，通过flavor.toml中的syntect_theme设置。  
+-        'syntect_theme = "C:/Users/ThinkPad/AppData/Roaming/yazi/config/bat-themes/Catppuccin Frappe.tmTheme"'  
+     上面这样设置，只有在theme.toml中设置后生效，而通过flavor.toml设置syntect_theme则不生效.  
+     1.2 但如果将bat高亮主题文件*.tmTheme修改为tmTheme.xml，将tmTheme.xml文件放到\yazi\config\flavors\catppuccin-frappe.yazi\文件夹中，此时不用设置flavor.toml中的syntect_theme也会生效。这样设置bat高亮主题更加优雅了，bat高亮主题和yazi主题放到一起，只修改theme.toml中的'[flavor] use即可'。  
+bat的catppuccin主题链接'https://github.com/catppuccin/bat'  
+
 
 ## 快捷键
 
@@ -49,8 +57,8 @@
 
 ---
 - cd   copy parent directory  
-- <A-PageUp>    预览上移动  
-- <A-PageDown>  预览下移动  
+- <C-b>    预览上移动  
+- <C-f>    预览下移动  
 
 ---
 - S  rg搜索文件内容  
@@ -58,10 +66,13 @@
 - Z  fzf模糊搜索  
 
 ---
-- o        打开  
+- o        在文件浏览器中打开  
 - Enter    打开  
 - O        选择打开方式  
-- C-Enter  选择打开方式  
-  Reveal   用'我的电脑'打开  
+- C-Enter  选择打开方式
+
+---
+- ca         压缩文件  
+- O选择选项  解压文件  
 
 

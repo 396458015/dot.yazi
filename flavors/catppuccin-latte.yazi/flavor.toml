@@ -1,20 +1,21 @@
 # vim:fileencoding=utf-8:foldmethod=marker
-# catppuccin-Frappe
+# catppuccin-Latte
 
 # : Flavor {{{
 
-[flavor]
-use = ""
+# [flavor]
+# use = ""
 
 # : }}}
 
 # : Manager {{{
 
 [manager]
-cwd = { fg = "#8ae234" }  # 左上角路径颜色 (Frappe)
+cwd = { fg = "#b00000" }  # 左上角路径颜色 (Latte)
 
 # Hovered 选项条颜色
-hovered         = { fg = "#2e3436", bg = "#b58900", bold = true }  # Frappe
+hovered         = { fg = "#2e3436", bg = "#8caaee", bold = true }  # Latte
+
 
 preview_hovered = { underline = true }
 
@@ -24,7 +25,7 @@ find_position = { fg = "#ae6485", bg = "reset", bold = true, italic = true }
 
 # Marker
 marker_selected = { fg = "lightgreen",  bg = "lightgreen" }
-marker_copied   = { fg = "lightyellow", bg = "lightyellow" }
+marker_copied   = { fg = "#df8e1d", bg = "#df8e1d" }
 marker_cut      = { fg = "lightred",    bg = "lightred" }
 marker_marked   = { fg = "#89a0c3",     bg = "#89a0c3" }
 
@@ -35,7 +36,7 @@ tab_width    = 1
 
 # Count
 count_selected = { fg = "black", bg = "lightgreen" }
-count_copied   = { fg = "black", bg = "lightyellow" }
+count_copied   = { fg = "black", bg = "#df8e1d" }
 count_cut      = { fg = "black", bg = "lightred" }
 
 # Border
@@ -44,7 +45,7 @@ border_symbol = "│"
 border_style  = { fg = "#3b3e4d" }
 
 # Highlighting
-syntect_theme = "C:/Users/ThinkPad/AppData/Roaming/yazi/config/bat-themes/Catppuccin Frappe.tmTheme"
+# syntect_theme = "C:/Users/ThinkPad/AppData/Roaming/yazi/config/bat-themes/Catppuccin Latte.tmTheme"
 
 # : }}}
 
@@ -53,17 +54,17 @@ syntect_theme = "C:/Users/ThinkPad/AppData/Roaming/yazi/config/bat-themes/Catppu
 [status]
 separator_open  = ""
 separator_close = ""
-separator_style = { fg = "darkgray", bg = "#2e3436" }  # Frappe
+separator_style = { fg = "darkgray", bg = "#7287fd" }  # Latte
 
 # Mode
-mode_normal = { fg = "#2e3436", bg = "#89a0c3", bold = true }  # Frappe
-mode_select = { fg = "#2e3436", bg = "lightgreen", bold = true }  # Frappe
-mode_unset  = { fg = "#2e3436", bg = "lightmagenta", bold = true }  # Frappe
+mode_normal = { fg = "#89a0c3", bg = "#eff1f5", bold = true }  # Latte
+mode_select = { fg = "lightgreen", bg = "#eff1f5", bold = true }  # Latte
+mode_unset  = { fg = "lightmagenta", bg = "#eff1f5", bold = true }  # Latte
 
 # Progress
 progress_label  = { bold = true }
-progress_normal = { fg = "#89a0c3", bg = "#2e3436" }  # Frappe
-progress_error  = { fg = "red", bg = "#2e3436" }  # Frappe
+progress_normal = { fg = "#eeeeee", bg = "#7287fd" }  # Latte
+progress_error  = { fg = "red", bg = "#7287fd" }  # Latte
 
 # Permissions
 permissions_t = { fg = "lightgreen" }
@@ -120,8 +121,8 @@ hovered = { underline = true }
 
 [which]
 cols = 2
-mask            = { bg = "#1e1e2e" }  # Frappe
-cand            = { fg = "#9cdcfe" }  # Frappe
+mask            = { bg = "#d3d3d3" }  # Latte
+cand            = { fg = "#6c71c4" }  # Latte
 rest            = { fg = "darkgray" }
 desc            = { fg = "#ae6485" }
 separator       = "  "
@@ -167,14 +168,14 @@ rules = [
 	{ mime = "audio/*", fg = "#9ea3de", bold = true },
 
 	# Archives
-	{ mime = "application/zip",             fg = "#f4b8e4", bold = true },
-	{ mime = "application/gzip",            fg = "#f4b8e4", bold = true },
-	{ mime = "application/x-tar",           fg = "#f4b8e4", bold = true },
-	{ mime = "application/x-bzip",          fg = "#f4b8e4", bold = true },
-	{ mime = "application/x-bzip2",         fg = "#f4b8e4", bold = true },
-	{ mime = "application/x-7z-compressed", fg = "#f4b8e4", bold = true },
-	{ mime = "application/x-rar",           fg = "#f4b8e4", bold = true },
-	{ mime = "application/xz",              fg = "#f4b8e4", bold = true },
+	{ mime = "application/zip",             fg = "#f71490", bold = true },
+	{ mime = "application/gzip",            fg = "#f71490", bold = true },
+	{ mime = "application/x-tar",           fg = "#f71490", bold = true },
+	{ mime = "application/x-bzip",          fg = "#f71490", bold = true },
+	{ mime = "application/x-bzip2",         fg = "#f71490", bold = true },
+	{ mime = "application/x-7z-compressed", fg = "#f71490", bold = true },
+	{ mime = "application/x-rar",           fg = "#f71490", bold = true },
+	{ mime = "application/xz",              fg = "#f71490", bold = true },
 
 	# Documents
 	# { mime = "application/doc",   fg = "green" },
@@ -183,7 +184,7 @@ rules = [
 	# { mime = "application/vnd.*", fg = "green" },
 
 	# Fallback 文件和文件夹字体颜色
-	{ name = "*",  fg = "#abb2bf", bold = true }, # files font (Frappe)
+	{ name = "*",  fg = "#4c4f69", bold = true }, # files font (Latte)
 
 	{ name = "*/", fg = "#6c71c4", bold = true }, # directories font
 	# { name = "*/", fg = "#9f86c4" }, # directories font
@@ -226,7 +227,7 @@ rules = [
 
 # Text
     { name = "*.txt"   ,text = "", fg = "#89e051" },
-    { name = "*.md"    ,text = "", fg = "#ffffff" },  # 
+    { name = "*.md"    ,text = "", fg = "#000000" },  # 
     { name = "*.tex"   ,text = "ﭨ", fg = "#46c8a8" },
     { name = "*.org"   ,text = "", fg = "#5dbd7e" },
     { name = "*.norg"  ,text = "", fg = "#5dbd7e" },
@@ -235,13 +236,13 @@ rules = [
     { name = "LICENSE" ,text = "", fg = "#cbcb41" },
 
 # Archives
-    { name = "*.zip" ,text = "", fg = "#f4b8e4" },
-    { name = "*.rar" ,text = "", fg = "#f4b8e4" },
-    { name = "*.tar" ,text = "", fg = "#f4b8e4" },
-    { name = "*.gz"  ,text = "", fg = "#f4b8e4" },
-    { name = "*.7z"  ,text = "", fg = "#f4b8e4" },
-    { name = "*.bz2" ,text = "", fg = "#f4b8e4" },
-    { name = "*.xz"  ,text = "", fg = "#f4b8e4" },
+    { name = "*.zip" ,text = "", fg = "#f71490" },
+    { name = "*.rar" ,text = "", fg = "#f71490" },
+    { name = "*.tar" ,text = "", fg = "#f71490" },
+    { name = "*.gz"  ,text = "", fg = "#f71490" },
+    { name = "*.7z"  ,text = "", fg = "#f71490" },
+    { name = "*.bz2" ,text = "", fg = "#f71490" },
+    { name = "*.xz"  ,text = "", fg = "#f71490" },
 
 # Documents
     { name = "*.pdf"  ,text = "", fg = "#b30b00" },
