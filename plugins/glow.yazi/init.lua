@@ -4,7 +4,8 @@ function M:peek()
 	local child = Command("glow")
 			:args({
 				"--style",
-				"dark",
+				-- "dark",
+				"light",
 				"--width",
 				tostring(self.area.w),
 				tostring(self.file.url),
