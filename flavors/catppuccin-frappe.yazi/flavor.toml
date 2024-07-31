@@ -34,9 +34,9 @@ tab_inactive = { fg = "#abb2bf", bg = "darkgray" }
 tab_width    = 1
 
 # Count
-count_selected = { fg = "black", bg = "lightgreen" }
-count_copied   = { fg = "black", bg = "lightyellow" }
-count_cut      = { fg = "black", bg = "lightred" }
+count_selected = { fg = "#000000", bg = "lightgreen" }
+count_copied   = { fg = "#000000", bg = "lightyellow" }
+count_cut      = { fg = "#000000", bg = "lightred" }
 
 # Border
 # border_symbol = " "
