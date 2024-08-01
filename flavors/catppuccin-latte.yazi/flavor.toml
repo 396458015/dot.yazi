@@ -40,9 +40,9 @@ count_copied   = { fg = "#eeeeee", bg = "#df8e1d" }
 count_cut      = { fg = "#eeeeee", bg = "lightred" }
 
 # Border
-# border_symbol = " "
-border_symbol = "│"
-border_style  = { fg = "#3b3e4d" }
+border_symbol = " "
+# border_symbol = "│"
+# border_style  = { fg = "#3b3e4d" }
 
 # Highlighting
 # syntect_theme = "C:/Users/ThinkPad/AppData/Roaming/yazi/config/bat-themes/Catppuccin Latte.tmTheme"
