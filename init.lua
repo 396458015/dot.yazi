@@ -27,3 +27,4 @@
 --         Preview:render(chunks[3]:padding(ui.Padding.xy(1))),
 --     }
 -- end
+require("starship"):setup()
