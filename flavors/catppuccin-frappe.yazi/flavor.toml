@@ -156,7 +156,7 @@ icon_error = ""
 # : File-specific styles {{{
 
 [filetype]
-
+# 文件类型字体颜色
 rules = [
 	# Images
 	{ mime = "image/*", fg = "cyan", bold = true },
@@ -168,11 +168,55 @@ rules = [
 	{ mime = "application/{,g}zip", fg = "#f71490", bold = true },
 	{ mime = "application/x-{tar,bzip*,7z-compressed,xz,rar}", fg = "#f71490", bold = true },
 
+    # 文件类型对应颜色
+	{ mime = "inode/directory",                fg = "#c9931a", bold = true },
+	{ mime = "text/x-script.python",           fg = "#8839ef", bold = true },
+	{ mime = "text/x-shellscript",             fg = "#8839ef", bold = true },
+	{ mime = "text/x-c",                       fg = "#8839ef", bold = true },
+	{ mime = "text/x-c++",                     fg = "#8839ef", bold = true },
+	{ mime = "text/x-lua",                     fg = "#8839ef", bold = true },
+	{ mime = "text/x-go",                      fg = "#8839ef", bold = true },
+	{ mime = "text/x-rs",                      fg = "#8839ef", bold = true },
+	{ mime = "text/javascript",                fg = "#8839ef", bold = true },
+	{ mime = "text/css",                       fg = "#8839ef", bold = true },
+	{ mime = "text/scss",                      fg = "#8839ef", bold = true },
+	{ mime = "text/html",                      fg = "#8839ef", bold = true },
+	{ mime = "text/x-lisp",                    fg = "#8839ef", bold = true },
+	{ mime = "text/x-perl",                    fg = "#8839ef", bold = true },
+	{ mime = "text/setting",                   fg = "#6d8086", bold = true },
+	{ mime = "application/json",               fg = "#6d8086", bold = true },
+	{ mime = "application/x-pie-executable",   fg = "#36bb4e", bold = true },
+	{ mime = "application/epub+zip",           fg = "#c5cc43", bold = true },
+	{ mime = "application/x-mobipocket-ebook", fg = "#c5cc43", bold = true },
+    { mime = "application/pdf",                fg = "#b30b00", bold = true },
+
+    # exts
+    { name = "*.docx", fg = "#185abd", bold = true },
+    { name = "*.doc",  fg = "#185abd", bold = true },
+    { name = "*.xlsx", fg = "#207245", bold = true },
+    { name = "*.xls",  fg = "#207245", bold = true },
+    { name = "*.csv",  fg = "#207245", bold = true },
+    { name = "*.pptx", fg = "#cb4a32", bold = true },
+    { name = "*.ppt",  fg = "#cb4a32", bold = true },
+    { name = "*.org",  fg = "#5dbd7e", bold = true },
+    { name = "*.norg", fg = "#5dbd7e", bold = true },
+    { name = "*.txt",  fg = "#6eac42", bold = true },
+    { name = "*.caj",  fg = "#dc8a78", bold = true },
+    { name = "*.md",   fg = "#47a2df", bold = true },
+    { name = "*.opju", fg = "#f66d54", bold = true },
+    { name = "*.hm",   fg = "#fa4616", bold = true },
+    { name = "*.stp",  fg = "#4273ca", bold = true },
+    { name = "*.inp",  fg = "#11a7a3", bold = true },
+    { name = "*.dll",  fg = "#5192d8", bold = true },
+    { name = "*.ps1",  fg = "#4273ca", bold = true },
+    { name = "*.rmvb", fg = "#732773", bold = true },
+    { name = "*.m",    fg = "#c04c0b", bold = true },
+    { name = "*.for",  fg = "#ab85df", bold = true },
+    { name = "*.cae",  fg = "#11a7a3", bold = true },
+    { name = "*.exe",  fg = "#40c5a9", bold = true },
+
 	# Documents
-	# { mime = "application/doc",   fg = "green" },
-	# { mime = "application/pdf",   fg = "green" },
-	# { mime = "application/rtf",   fg = "green" },
-	# { mime = "application/vnd.*", fg = "green" },
+    # { mime = "application/{pdf,doc,rtf,vnd.*}", fg = "cyan" },
 
 	# Empty files
 	{ mime = "inode/x-empty", fg = "red" },
@@ -191,7 +235,7 @@ rules = [
 ]
 
 [icon]
-
+# 文件类型图标颜色
 dirs = [
     { name = "Desktop/"       ,text = "" },
     { name = "Documents/"     ,text = "" },
@@ -395,8 +439,8 @@ conds = [
 	{ if = "dummy",  text = "" },
 
 	# Fallback
-	{ if = "dir", text = "" },  # directories icon   󰉋
-	{ if = "exec", text = "" },
+	{ if = "dir",  text = "", fg_dark = "#F7C030",fg_light = "#F7C030" },  # directories icon   󰉋 #F7C030
+	{ if = "exec", text = "", fg_dark = "#a2c5d1", fg_light = "#3a4446" },
 	{ if = "!dir", text = "" },  # files icon     󰈔
 ]
 

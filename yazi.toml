@@ -60,6 +60,21 @@ rules = [
 	{ mime = "application/x-rar",           use = [ "open", "extract" ] },
     { mime = "application/xz",              use = [ "open", "extract" ] },
 
+    { name = "*.docx", use = [ "open" ] },
+    { name = "*.doc",  use = [ "open" ] },
+    { name = "*.xlsx", use = [ "open" ] },
+    { name = "*.xls",  use = [ "open" ] },
+    { name = "*.pptx", use = [ "open" ] },
+    { name = "*.ppt",  use = [ "open" ] },
+    { name = "*.pdf",  use = [ "open" ] },
+    { name = "*.caj",  use = [ "open" ] },
+    { name = "*.opju", use = [ "open" ] },
+    { name = "*.rmvb", use = [ "play" ] },
+    { name = "*.hm",   use = [ "open" ] },
+    { name = "*.cae",  use = [ "open" ] },
+    { name = "*.exe",  use = [ "open" ] },
+
+	# Fallback
 	{ mime = "*", use = [ "nvim", "open" ] },
 ]
 
