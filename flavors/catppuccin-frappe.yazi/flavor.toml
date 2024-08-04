@@ -201,6 +201,8 @@ rules = [
     { name = "*.org",  fg = "#5dbd7e", bold = true },
     { name = "*.norg", fg = "#5dbd7e", bold = true },
     { name = "*.txt",  fg = "#6eac42", bold = true },
+    { name = "*.tex",  fg = "#56a34a", bold = true },
+    { name = "*.bib",  fg = "#56a34a", bold = true },
     { name = "*.caj",  fg = "#dc8a78", bold = true },
     { name = "*.md",   fg = "#47a2df", bold = true },
     { name = "*.opju", fg = "#f66d54", bold = true },
@@ -214,6 +216,7 @@ rules = [
     { name = "*.for",  fg = "#ab85df", bold = true },
     { name = "*.cae",  fg = "#11a7a3", bold = true },
     { name = "*.exe",  fg = "#40c5a9", bold = true },
+    { name = "*.rar",  fg = "#f71490", bold = true },
 
 	# Documents
     # { mime = "application/{pdf,doc,rtf,vnd.*}", fg = "cyan" },
@@ -269,7 +272,8 @@ exts = [
 # Text
     { name = "txt",     text = "", fg_dark = "#89e051" },
     { name = "md",      text = "", fg_dark = "#ffffff" }, #
-    { name = "tex",     text = "ﭨ", fg_dark = "#46c8a8" },
+    { name = "tex",     text = "", fg_dark = "#56a34a" }, # ﭨ
+    { name = "bib",     text = "", fg_dark = "#56a34a" },
     { name = "org",     text = "", fg_dark = "#5dbd7e" },
     { name = "norg",    text = "", fg_dark = "#5dbd7e" },
     { name = "rst",     text = "", fg_dark = "#7e60c0" },
