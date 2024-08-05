@@ -201,7 +201,7 @@ rules = [
     { name = "*.ppt",  fg = "#cb4a32", bold = true },
     { name = "*.org",  fg = "#5dbd7e", bold = true },
     { name = "*.norg", fg = "#5dbd7e", bold = true },
-    { name = "*.txt",  fg = "#6eac42", bold = true },
+    { name = "*.txt",  fg = "#63bd24", bold = true },
     { name = "*.tex",  fg = "#56a34a", bold = true },
     { name = "*.bib",  fg = "#56a34a", bold = true },
     { name = "*.caj",  fg = "#dc8a78", bold = true },
@@ -271,7 +271,7 @@ files = [
 
 exts = [
 # Text
-    { name = "txt",     text = "", fg_dark = "#6eac42" },
+    { name = "txt",     text = "", fg_dark = "#63bd24" },
     { name = "md",      text = "", fg_dark = "#47a2df" }, #
     { name = "tex",     text = "", fg_dark = "#56a34a" }, # ﭨ
     { name = "bib",     text = "", fg_dark = "#56a34a" },
