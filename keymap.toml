@@ -53,7 +53,8 @@ keymap = [
 	{ on = "v",       run = "visual_mode",                        desc = "Enter visual mode (selection mode)" },
 	{ on = "V",       run = "visual_mode --unset",                desc = "Enter visual mode (unset mode)" },
 	{ on = "<C-a>",   run = "select_all --state=true",            desc = "Select all files" },
-	{ on = "<C-r>",   run = "select_all --state=none",            desc = "Inverse selection of all files" },
+	# { on = "<C-r>",   run = "select_all --state=none",            desc = "Inverse selection of all files" },
+    { on = "<C-r>", run = "refresh" },
 
 	# Operation
 	{ on = "o",         run = "open",                                                 desc = "Open the selected files" },
@@ -271,7 +272,7 @@ keymap = [
 
 	# Undo/Redo
 	{ on = "u",     run = "undo", desc = "Undo the last operation" },
-	{ on = "<C-r>", run = "redo", desc = "Redo the last operation" },
+	# { on = "<C-r>", run = "redo", desc = "Redo the last operation" },
 
 	# Help
 	{ on =  "<F1>" , run = "help", desc = "Open help" }
