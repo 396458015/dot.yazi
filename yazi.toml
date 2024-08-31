@@ -90,8 +90,15 @@ suppress_preload = false
 
 [plugin]
 
+# plugin:mine-ext.yazi
 fetchers = [
 	{ id = "mime-ext", name = "*", run = "mime-ext",if = "!mime", prio = "high" },
+]
+
+# plugin:git.yazi
+prepend_fetchers = [
+  { id   = "git", name = "*",  run  = "git" },
+  { id   = "git", name = "*/", run  = "git" },
 ]
 
 prepend_previewers = [

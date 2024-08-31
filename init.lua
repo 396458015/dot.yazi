@@ -18,4 +18,5 @@ require("searchjump"):setup {
     search_patterns = {}  -- demo:{"%.e%d+","s%d+e%d+"}
 }
 
-
+-- git.yazi
+require("git"):setup()
