@@ -278,7 +278,7 @@ end)
 local switch_entity_hightlights = ya.sync(function(st,fn)
 	local inc_backup = Entity._inc
 	Entity._inc = st.highlights_id - 1
-	local id = Entity:children_add(fn, 3000)
+	local id = Entity:children_add(fn, 4000)
 	Entity._inc =  inc_backup
 	return id
 end)
@@ -298,7 +298,7 @@ local toggle_ui = ya.sync(function(st)
 	end
 
 	for _, value in ipairs(Entity._children) do
-		if value["order"] == 3000 then
+		if value["order"] == 4000 then
 			st.highlights_function = value[1]
 			st.highlights_id = value["id"]
 			break
@@ -331,7 +331,7 @@ local toggle_ui = ya.sync(function(st)
 		local match_pattern = (st.match_pattern and st.opt_show_search_in_statusbar) and ":" .. st.match_pattern or ""
 		return ui.Line {
 			ui.Span(THEME.status.separator_open):fg(style.bg),
-			ui.Span("[]" .. match_pattern .. " "):style(style),
+			ui.Span("[SJ]" .. match_pattern .. " "):style(style),
 		}
 	end
 	st.status_sj_id = Status:children_add(status_sj,1001,Status.LEFT)
