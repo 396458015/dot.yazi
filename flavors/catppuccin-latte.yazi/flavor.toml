@@ -120,7 +120,7 @@ hovered = { underline = true }
 
 [which]
 cols = 2
-mask            = { bg = "#e8e0d9" }  # Latte
+mask            = { bg = "#dedede" }  # Latte
 cand            = { fg = "#6c71c4" }  # Latte
 rest            = { fg = "darkgray" }
 desc            = { fg = "#ae6485" }
