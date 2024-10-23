@@ -218,6 +218,7 @@ rules = [
     { name = "*.exe",  fg = "#40c5a9", bold = true },
     { name = "*.rar",  fg = "#f71490", bold = true },
     { name = "*.vim",  fg = "#019833", bold = true },
+    { name = "*.ahk",  fg = "#7ac673", bold = true },
 
 	# Documents
     # { mime = "application/{pdf,doc,rtf,vnd.*}", fg = "cyan" },
@@ -392,7 +393,7 @@ exts = [
     { name = "DAT",           text = "", fg_dark = "#7ebae4" },
     { name = "db",            text = "", fg_dark = "#6d8086" },
     { name = "dll",           text = "", fg_dark = "#6d8086" },
-    { name = "ahk",           text = "", fg_dark = "#019833" },
+    { name = "ahk",           text = "", fg_dark = "#7ac673" },
     { name = "tmp",           text = "", fg_dark = "#ffffff" },
     { name = "el",            text = "", fg_dark = "#7f5ab6" },
     { name = "lib",           text = "", fg_dark = "#ffffff" },
