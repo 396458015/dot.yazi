@@ -218,6 +218,7 @@ rules = [
     { name = "*.cae",  fg = "#11a7a3", bold = true },
     { name = "*.exe",  fg = "#40c5a9", bold = true },
     { name = "*.rar",  fg = "#f71490", bold = true },
+    { name = "*.vim",  fg = "#019833", bold = true },
 
 	# Documents
     # { mime = "application/{pdf,doc,rtf,vnd.*}", fg = "cyan" },
