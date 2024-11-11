@@ -372,3 +372,7 @@ desc = "searchjump mode"
 # run = "plugin searchjump --args='autocd'"
 # desc = "searchjump mode(auto cd select folder)"
 
+# clipboard.yazi
+[[manager.prepend_keymap]]
+on   = [ "<C-y>" ]
+run = "plugin clipboard"
